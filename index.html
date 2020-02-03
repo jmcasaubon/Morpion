@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Morpion V4 (Configuration)</title>
+        
+        <!-- Fonte pour les symboles X et O -->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
+        <!-- Normalisation / réinitialisation des styles CSS-->
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+              integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" 
+              crossorigin="anonymous" />
+        
+        <!-- CSS local -->
+        <link rel="stylesheet" href="css/Morpion.css">
+	</head>
+	<body>
+        <header>
+
+        </header>
+
+        <main>
+            <h1> Jeu de Morpion (V4)</h1>
+            <form action="vue/Morpion.vue.php" method="get">
+                <p>
+                    <label for="nom-j1">Nom du joueur :</label>
+                    <input type=text id="nom-j1" name="nom-j1" required>
+                </p>
+                <input type=hidden id="nom-j2" name="nom-j2" value="W.O.P.R.">
+                <p>
+                    <label for="nom-j1">Nombre de cases :</label>
+                    <input type=number id="dim" name="dim" min=3 max=6 value=3 required>
+                </p>
+                <p>
+                    <input type="submit" value="Démarrer la partie">
+                </p>
+            </form>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+

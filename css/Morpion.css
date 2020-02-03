@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.joueur {
+    flex: 1;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+#joueur-1 {
+    background-color: rgba(127, 0, 0, 0.2);
+    border : 5px solid white ;
+}
+
+#taille {
+    display: none;
+}
+
+#joueur-2 {
+    background-color: rgba(0, 0, 127, 0.2);
+    border : 5px solid white ;
+}
+
+.symbole {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5em;
+    text-align: center;
+}
+
+.resultat {
+    font-size: 2em;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+.score {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#jeu {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grille {
+    padding: 0;
+}
+
+#zone {
+    border-collapse: collapse;
+}
+
+.case {
+    border: 2px solid #3F3F3F;
+    width: 80px ;
+    height: 80px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+.pattern {
+    background-color: rgba(0, 127, 0, 0.2);
+}
+
+#rejouer {
+    display: none;
+    align-items: flex-end; 
+    justify-content: space-evenly;
+}
+
+.bouton {
+    border-radius: 1em;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    padding: .5em;
+}
+
+#suivant {
+    margin: 1em 0 0 0;
+    background-color: rgba(0, 127, 0, 0.2);
+    border: 2px solid #007F00;
+    color: #003F00 ;
+}
+
+#reinit {
+    margin: 1em 0 0 1em;
+    background-color: rgba(127, 0, 0, 0.2);
+    border: 2px solid #7F0000;
+    color: #3F0000 ;
+}
